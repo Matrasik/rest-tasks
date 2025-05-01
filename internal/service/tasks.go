@@ -3,10 +3,10 @@ package service
 import "time"
 
 type Task struct {
-	Id          int       `json:"id"`
+	Id          int       `json:"-"`
 	Title       string    `json:"title"`
 	Description string    `json:"description"`
 	Status      string    `json:"-"`
-	CratedAt    time.Time `json:"-"`
+	CreatedAt   time.Time `json:"-"`
 	UpdatedAt   time.Time `json:"-"`
 }
